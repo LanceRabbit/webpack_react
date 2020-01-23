@@ -5,7 +5,7 @@ class Head extends React.Component{
     super(props)
   }
   render() {
-    return <h3>Hello React JSX~!</h3>
+    return <h3>Hello React JSX~!!</h3>
   }
 }
-ReactDOM.render(<Head/>, document.querySelector("#root"));
+ReactDOM.render(<Head/>, document.querySelector("#app"));

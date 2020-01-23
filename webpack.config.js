@@ -1,10 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  devServer: {
+    contentBase: path.resolve(__dirname, "./src"),
+    historyApiFallback: true, // true for index.html upon 404, object for multiple paths
+  },
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'bundle.js'
   },
   module: {
     rules: [
