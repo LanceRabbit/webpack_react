@@ -1,5 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-let elem = React.createElement("h3", {}, "Hello React");
-ReactDOM.render(elem, document.querySelector("#root"));
+class Head extends React.Component{
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return <h3>Hello React JSX~!</h3>
+  }
+}
+ReactDOM.render(<Head/>, document.querySelector("#root"));
